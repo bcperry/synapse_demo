@@ -1,0 +1,25 @@
+{
+	"name": "Database_all",
+	"properties": {
+		"Name": "Database_all",
+		"EntityType": "DATABASE",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://staging@synapsedatalake.dfs.core.usgovcloudapi.net/",
+			"Properties": {
+				"FormatType": "parquet",
+				"LinkedServiceName": "synapsedemo-WorkspaceDefaultStorage"
+			}
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 5,
+		"ObjectId": "b8f72049-11f5-4adb-b60b-5821a08b770f"
+	},
+	"type": "DATABASE"
+}

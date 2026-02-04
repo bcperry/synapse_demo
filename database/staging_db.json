@@ -1,0 +1,25 @@
+{
+	"name": "staging_db",
+	"properties": {
+		"Name": "staging_db",
+		"EntityType": "DATABASE",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://staging@synapsedatalake.dfs.core.usgovcloudapi.net/",
+			"Properties": {
+				"FormatType": "parquet",
+				"LinkedServiceName": "synapsedemo-WorkspaceDefaultStorage"
+			}
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "8e09667f-f1af-40a6-bba4-c78328a1ff34"
+	},
+	"type": "DATABASE"
+}

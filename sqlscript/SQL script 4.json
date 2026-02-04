@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 4",
+	"properties": {
+		"content": {
+			"query": "SELECT \n    tail_number,\n    manufacturer,\n    model,\n    DATEADD(DAY, acquisition_date, '1970-01-01') AS acquisition_date\nFROM ext.aircraft;",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "demo_dedicated_pool",
+				"poolName": "demo_dedicated_pool"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

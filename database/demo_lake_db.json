@@ -1,0 +1,25 @@
+{
+	"name": "demo_lake_db",
+	"properties": {
+		"Name": "demo_lake_db",
+		"EntityType": "DATABASE",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://synapsefilesystem@synapsedatalake.dfs.core.usgovcloudapi.net/demo_lake_db",
+			"Properties": {
+				"FormatType": "parquet",
+				"LinkedServiceName": "synapsedemo-WorkspaceDefaultStorage"
+			}
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 6,
+		"ObjectId": "08ea0a4f-ae1e-4519-b1d5-fb84fcfdd905"
+	},
+	"type": "DATABASE"
+}

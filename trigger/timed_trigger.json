@@ -1,0 +1,17 @@
+{
+	"name": "timed_trigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 15,
+				"startTime": "2025-09-10T17:43:00",
+				"timeZone": "Eastern Standard Time"
+			}
+		}
+	}
+}
